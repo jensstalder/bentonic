@@ -1659,6 +1659,10 @@ nav ul li a:hover, nav ul li a:focus {
 
 .mockup__img {
   display: block;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/head-bg.jpg');
   height: 100%;
   width: 100%;
 }
