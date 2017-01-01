@@ -438,7 +438,7 @@ iframe {
   line-height: 1.25;
   margin: 0;
   padding: 0 0 0 1.65em;
-  background: url(../_images/vinyls.svg) no-repeat 0 50%;
+  background: url(../assets/images/vinyls.svg) no-repeat 0 50%;
   background-size: auto 100%;
 }
 
@@ -1919,7 +1919,7 @@ section#sponsors li {
 -----------------------------*/
 
 .subscribe {
-  background: url(../_images/keyboard-bg.jpg) no-repeat center center;
+  background: url(../assets/images/keyboard-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2090,7 +2090,7 @@ ul.social-buttons li {
 }
 
 .wp3 {
-  background: #191919 url(../_images/apple.png) no-repeat center center;
+  background: #191919 url(../assets/images/apple.png) no-repeat center center;
   background-position: center bottom;
   height: 100%;
 }
