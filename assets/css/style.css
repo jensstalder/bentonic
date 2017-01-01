@@ -586,15 +586,15 @@ iframe {
 }
 
 .grid__item--deco-1::before {
-  content: '1985';
+  content: 'Bentonic';
 }
 
 .grid__item--deco-2::before {
-  content: '1974';
+  content: 'Bentonic';
 }
 
 .grid__item--deco-3::before {
-  content: '2015';
+  content: 'Bentonic';
 }
 
 .grid__link {
