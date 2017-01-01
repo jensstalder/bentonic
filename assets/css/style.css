@@ -586,15 +586,15 @@ iframe {
 }
 
 .grid__item--deco-1::before {
-  content: 'Bentonic';
+  content: '♫';
 }
 
 .grid__item--deco-2::before {
-  content: 'Bentonic';
+  content: '♬';
 }
 
 .grid__item--deco-3::before {
-  content: 'Bentonic';
+  content: '♩';
 }
 
 .grid__link {
