@@ -1,3 +1,5 @@
 $(function () {
-    $('.inforow__images a').fluidbox();
+    $('.inforow__images a').fluidbox({
+      immediateOpen: true
+    });
 });
