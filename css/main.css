@@ -168,6 +168,9 @@ h2, h3, h4{
 .inforow--inverse a{
   color: white;
 }
+.inforow--inverse input{
+  color: black;
+}
 
 
 .inforow__image{
