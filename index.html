@@ -24,12 +24,6 @@
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
       <script>
-        function checkLoginState() {
-          FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-          });
-        }
-
         window.fbAsyncInit = function() {
           FB.init({
             appId      : '1322213847868007',
@@ -38,10 +32,6 @@
             version    : 'v2.8'
           });
           FB.AppEvents.logPageView();
-
-          FB.getLoginStatus(function(response) {
-              statusChangeCallback(response);
-          });
         };
 
         (function(d, s, id){
@@ -96,14 +86,10 @@
             Facebook Page
           </h2>
           <p>Exclusive Beiträge rund um Bentonic.</p>
-          <!-- <fb:login-button
-            scope="public_profile,email"
-            onlogin="checkLoginState();">
-          </fb:login-button> -->
+          <div class="fb-page" data-href="https://www.facebook.com/bentonicband/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bentonicband/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bentonicband/">Bentonic</a></blockquote></div>
           <a href="https://www.facebook.com/bentonicband/" target="_blank" class="inforow__btn">
             Zur Facebook Page
           </a>
-          <!-- <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div> -->
         </div>
         <div class="inforow">
           <h2 class="inforow__title">
