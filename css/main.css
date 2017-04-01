@@ -145,9 +145,20 @@ h2, h3, h4{
 }
 
 
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+#mc_embed_signup form{padding: 0px;}
 
 
-
+.fb-page{
+  max-width: 100%;
+  overflow: auto;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .fb-page{
+    display: block;
+  }
+}
 
 .sixteen-nine {
   position: relative;
