@@ -1,564 +1,167 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- view grid -->
-<div class="view view--grid view--current">
-  <!-- header -->
-  <header id="home">
-    <div class="container-fsluid">
-      <div class="rows">
-        <div class="col-lsg-12">
-          <!-- nav -->
-          <nav class="pull">
-            <!-- section photo -->
-            <section class="light-bg text-center" id="photo">
-              <div class="container-fluid nopadding responsive-services">
-                <div class="wrapper">
-                  <div class="iphone">
-                    <div class="wp3"></div>
-                  </div>
-                </div>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1322213847868007";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+      <script>
+        function checkLoginState() {
+          FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+          });
+        }
+
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '1322213847868007',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+          FB.AppEvents.logPageView();
+
+          FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="headrow">
+          <img class="headrow__logo" src="img/logo.svg" alt="Bentonic logo">
+          <h1>Bentonic</h1>
+          <h2>Schweizer Musik Duo Benjamin Stalder & Tonja Andenmatten</h2>
+          <p>Multi-Instrumentalist Benjamin Stalder und Singer/Songwriter Tonja Andenmatten. Das sind Bentonic – das jüngste Künstlerprojekt der beiden Herzblutmusiker.</p>
+        </div>
+        <div class="inforow">
+          <h2 class="inforow__title">
+            YouTube
+          </h2>
+          <p>Die Neusten Singles als Video sind auf youtube Monatlich erhältlich. Gratis für unsere Freunde.</p>
+          <a href="https://www.youtube.com/channel/UC9Dklc-MLKcR889bBgWWmdA" target="_blank" class="inforow__btn">
+            Zum YouTube Kanal
+          </a>
+        </div>
+        <div class="inforow">
+          <h2 class="inforow__title">
+            iTunes, Spotify, Google Play
+          </h2>
+          <p>Überall erhältlich. Kaufe, oder Streame und unterstützte unser Projekt dabei. Win-Win.</p>
+          <iframe src="https://embed.spotify.com/?uri=spotify%3Aartist%3A3hnAIQazffizWZ1jgk6kgw&theme=white" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe>
+
+        </div>
+        <div class="inforow">
+          <h2 class="inforow__title">
+            Facebook Page
+          </h2>
+          <p>Exclusive Beiträge rund um Bentonic.</p>
+          <!-- <fb:login-button
+            scope="public_profile,email"
+            onlogin="checkLoginState();">
+          </fb:login-button> -->
+          <a href="https://www.facebook.com/bentonicband/" target="_blank" class="inforow__btn">
+            Zur Facebook Page
+          </a>
+          <!-- <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div> -->
+        </div>
+        <div class="inforow">
+          <h2 class="inforow__title">
+            Newsletter
+          </h2>
+          <p>Ein geschenk in deiner Inbox.</p>
+          <!-- Begin MailChimp Signup Form -->
+          <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+          	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            #mc_embed_signup form{padding: 0px;}
+          	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+          	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+          <form action="https://benjaminstalder.us14.list-manage.com/subscribe/post?u=dfc98c0531b8c2bc1ea757cb3&amp;id=ed1b733f91" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+
+          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+          <div class="mc-field-group">
+          	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+          </label>
+          	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group">
+          	<label for="mce-FNAME">First Name </label>
+          	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group">
+          	<label for="mce-LNAME">Last Name </label>
+          	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+          </div>
+          <p><a href="http://us14.campaign-archive2.com/home/?u=dfc98c0531b8c2bc1ea757cb3&id=ed1b733f91" title="View previous campaigns">View previous campaigns.</a></p>
+          	<div id="mce-responses" class="clear">
+          		<div class="response" id="mce-error-response" style="display:none"></div>
+          		<div class="response" id="mce-success-response" style="display:none"></div>
+          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dfc98c0531b8c2bc1ea757cb3_ed1b733f91" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
               </div>
-            </section>
-            <!-- section photo -->
-
-            <!-- section intro -->
-            <section class="light-bg intro text-center section-padding" id="intro">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2 wp1">
-                    <h2>Lena Yigit</h2>
-                    <h1 class="entry-content">Web, Graphic Design and Photography</h1>
-                    <p>I am a web & graphic designer, photographer, painter and sculptor. I have <a href="#">consequat ut sed sem</a> been designing web pages and graphic design since 2002, developing my own HTML/CSS codes since then, PHP since 2011. I'm currently living in Czech Republic.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- section intro -->
-          </nav>
-          <!-- nav -->
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- section home -->
-  <section id="home" class="wrap light-bg">
-    <div class="mockup">
-      <!-- <img class="mockup__img " src="assets/images/head-bg.png" alt="" /> -->
-      <!-- <img class="mockup__img " src="assets/images/mockup-bg-jpg" alt="" /> -->
-      <div class="mockup__img"></div>
-
-      <div class="sliders-header">
-        <h1><span>Pop · R&amp;B · Soul</span> Bentonic <i>Multi-Instrumentalist Benjamin Stalder und Singer/Songwriter Tonja Andenmatten.</i></h1>
-      </div>
-    </div>
-    <div class="nav_button">
-      <div class="text-center navicon">
-        <a id="nav-toggle" class="nav_slide_button"><span></span></a>
-      </div>
-    </div>
-  </section>
-  <!-- section home -->
-
-  <!-- section discography part 1 -->
-  <section id="discography" class="light-bg text-center section-padding">
-    <div class="col-lg-8 col-lg-offset-2 paddingbottom">
-      <h2>Singles</h2>
-      <h1 class="entry-content">12 Songs in 12 Monaten</h1>
-      <p>Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet.</p>
-    </div>
-    <div class="clearfix"></div>
-  </section>
-  <!-- section discography part 1 -->
-
-  <!-- section discography part 2 -->
-  <section id="discography2" class="light-bg">
-    <div class="container">
-      <ul class="grid">
-        <!-- album item -->
-        <li class="grid__item">
-          <a class="grid__link" href="#album-1">
-            <div class="img-wrap img-wrap--grid">
-              <svg class="lp lp--grid">
-                <use xlink:href="#icon-lp-mini"></use>
-              </svg>
-              <img class="img img--grid" src="assets/images/album-stay-true.jpg" alt="album1" />
-            </div>
-            <span class="year">NOV 2016</span>
-            <h2 class="artist">#1</h2>
-            <h3 class="title">Stay True</h3>
-          </a>
-        </li>
-        <!-- album item -->
-        <!-- album item -->
-        <li class="grid__item grid__item--deco grid__item--deco-1">
-          <a class="grid__link" href="#album-2">
-            <div class="img-wrap img-wrap--grid">
-              <svg class="lp lp--grid">
-                <use xlink:href="#icon-lp-mini"></use>
-              </svg>
-              <img class="img img--grid" src="assets/images/album-someone-needs-someone-else.jpg" alt="album2" />
-            </div>
-            <span class="year">DEZ 2016</span>
-            <h2 class="artist">#2</h2>
-            <h3 class="title">Someone Needs Someone Else</h3>
-          </a>
-        </li>
-        <!-- album item -->
-        <!-- album item -->
-        <li class="grid__item">
-          <a class="grid__link" href="#album-3">
-            <div class="img-wrap img-wrap--grid">
-              <svg class="lp lp--grid">
-                <use xlink:href="#icon-lp-mini"></use>
-              </svg>
-              <img class="img img--grid" src="assets/images/album-baby-cool.jpg" alt="album3" />
-            </div>
-            <span class="year">JAN 2017</span>
-            <h2 class="artist">#3</h2>
-            <h3 class="title">Baby Cool</h3>
-          </a>
-        </li>
-        <!-- album item -->
-      </ul>
-    </div>
-  </section>
-  <!-- section discography part 2 -->
-
-  <!-- section sponsors -->
-  <section id="sponsors" class="light-bg corporates background text-center section-padding">
-    <div class="container">
-      <div class="col-lg-12">
-        <ul>
-        <!-- sponsor item -->
-        <li>
-          <a href="#"><img src="assets/images/brand-1.png" alt="" />
-          </a>
-        </li>
-        <!-- sponsor item -->
-        <!-- sponsor item -->
-        <li>
-          <a href="#"><img src="assets/images/brand-2.png" alt="" />
-          </a>
-        </li>
-        <!-- sponsor item -->
-        <!-- sponsor item -->
-        <li>
-          <a href="#"><img src="assets/images/brand-3.png" alt="" />
-          </a>
-        </li>
-        <!-- sponsor item -->
-        <!-- sponsor item -->
-        <li>
-          <a href="#"><img src="assets/images/brand-4.png" alt="" />
-          </a>
-        </li>
-        <!-- sponsor item -->
-        <!-- sponsor item -->
-        <li>
-          <a href="#"><img src="assets/images/brand-5.png" alt="" />
-          </a>
-        </li>
-        <!-- sponsor item -->
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- section sponsors -->
-
-  <!-- section video -->
-  <section id="video" class="light-bg text-center section-padding">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 paddingbottom">
-        <h2>Videos</h2>
-        <h1 class="entry-content">Buildt with Bootstrap v3.0</h1>
-        <p>Sed a lorem quis neque interdum <a href="#">consequat ut sed sem</a>. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet.</p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=PL5_87jdby-G8tZZefbfVCRWvy8HaEyVtl" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section video -->
-
-  <!-- section subscribe -->
-  <section id="subscribe" class="light-bg subscribe text-center">
-    <div class="container">
-      <h1><i class="fa fa-paper-plane"></i><span>Subscribe to stay in the loop</span></h1>
-      <form action="#">
-        <input type="text" name="join" value="" placeholder="" required>
-        <input type="submit" name="submit" value="Join The Newsletter!">
-      </form>
-    </div>
-  </section>
-  <!-- section subscribe -->
-
-  <!-- section events -->
-  <section id="events" class="light-bg download text-center section-padding">
-    <div class="container">
-      <div class="row">
-        <!-- event item -->
-        <div class="col-lg-8 col-lg-offset-2 wp1 listing">
-          <h2>December 12nd</h2>
-          <h1 class="entry-content">City Stadium, Brno, Czech Republic</h1>
-          <p><a href="#" class="btn btn-lg btn-default">Buy tickets</a> - <a href="#" class="btn btn-lg btn-default">Reservation</a>
-          </p>
-        </div>
-        <!-- event item -->
-        <!-- event item -->
-        <div class="col-lg-12 clearfix"></div>
-        <div class="col-lg-8 col-lg-offset-2 wp1 listing">
-          <h2>December 29th</h2>
-          <h1 class="entry-content">Area, Club 71, Kiev, Ukraine</h1>
-          <p><a href="#" class="btn btn-lg btn-default">Buy tickets</a> - <a href="#" class="btn btn-lg btn-default">Reservation</a>
-          </p>
-        </div>
-        <!-- event item -->
-        <!-- event item -->
-        <div class="col-lg-12 clearfix"></div>
-        <div class="col-lg-8 col-lg-offset-2 wp1 listing">
-          <h2>January 3rd</h2>
-          <h1 class="entry-content">Opera House, Athens, Greece</h1>
-          <p><a href="#" class="btn btn-lg btn-default">Buy tickets</a> - <a href="#" class="btn btn-lg btn-default">Reservation</a>
-          </p>
-        </div>
-        <!-- event item -->
-      </div>
-    </div>
-  </section>
-  <!-- section events -->
-
-  <!-- section gallery -->
-  <section id="gallery" class="light-bg text-center">
-    <div class="container-portfolio">
-      <div class="portfolio-grid text-center">
-        <div class="justified-gallery" id="nospacegallery">
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/1.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/4.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/5.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/6.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/2.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/6.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/3.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-          <!-- gallery item -->
-          <div class="animthumb">
-            <a class="jg-entry" href="#">
-              <img class="img-responsive" alt="" src="assets/images/3.jpg">
-            </a>
-          </div>
-          <!-- gallery item -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section gallery -->
-
-  <!-- section contact -->
-  <section id="contact" class="light-bg text-center section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="entry-content">Enquiries</h2>
-          <h1 class="entry-content">Have a question? just spit it out!</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-offset-2 col-lg-8">
-          <!--start contact form -->
-          <form action="#" method="post" class="contactForm">
-            <p class="form">
-              <input class="field" type="text" name="name" id="name" value="Name*" onblur="if(this.value == ''){this.value='Name*'}" onclick="if(this.value=='Name*'){this.value=''}" />
-              <input class="field" type="text" name="email" id="email" value="E-mail*" onblur="if(this.value == ''){this.value='E-mail*'}" onclick="if(this.value=='E-mail*'){this.value=''}" />
-              <input class="field" type="text" name="subject" id="subject" value="4+9=?*" onblur="if(this.value == ''){this.value='4+9=?*'}" onclick="if(this.value=='4+9=?*'){this.value=''}" />
-              <textarea class="textarea" rows="4" name="message" id="message" cols="1">Message*</textarea>
-              <input type="submit" value="SEND" class="sendForm" id="submit" />
-            </p>
-            <p class="left">*Necessary</p>
-            <div id="status"></div>
           </form>
-          <div class="clear"></div>
-          <!--end contact form -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <!-- social links -->
-            <ul class="social-buttons">
-
-              <li><a href="https://play.google.com/store/music/artist/Bentonic?id=A5bw37uewivlfjaopoiegydvnv4" class="social-btn"><i class="fa fa-2x fa-google"></i></a></li>
-              <li><a href="https://www.facebook.com/benjamin.stalder.54" class="social-btn"><i class="fa fa-2x fa-facebook"></i></a></li>
-              <li><a href="https://open.spotify.com/artist/3hnAIQazffizWZ1jgk6kgw" class="social-btn"><i class="fa fa-2x fa-spotify"></i></a></li>
-              <li><a href="https://itun.es/ch/Cxk0fb" class="social-btn"><i class="fa fa-2x fa-apple"></i></a></li>
-              <li><a href="https://soundcloud.com/user-893089549" class="social-btn"><i class="fa fa-2x fa-soundcloud"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UC9Dklc-MLKcR889bBgWWmdA" class="social-btn"><i class="fa fa-2x fa-youtube"></i></a></li>
-            </ul>
-            <!-- social links -->
           </div>
+
+          <!--End mc_embed_signup-->
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- section contact -->
-
-  <!-- section twitter -->
-  <section id="twitter-main" class="dark-bg text-center section-padding">
-    <div class="container">
-      <div class="col-lg-12 text-center">
-        <i class="fa fa-3x fa-twitter blue"></i>
-      </div>
-      <div id="featured-tweets" class="col-lg-6 col-lg-offset-3">
-        <div id="twitter"></div>
-      </div>
-    </div>
-  </section>
-  <!-- section twitter -->
-
-  <!-- section map -->
-  <section class="light-bg text-center up-wrap" id="map">
-    <a href="mailto:noreply@krasotaiskusstva.com" class="up-btn"><i class="fa fa-envelope"></i></a>
-    <div class="gmap" data-location="Brno, Czech Republic"></div>
-  </section>
-  <!-- section map -->
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <p>Media and audios are &copy; Copyright 2016 Krasota Iskusstva, unless otherwise noted. All rights reserved. They may not be reproduced, published, copied or transmitted in any form, including electronically on the Internet or World Wide Web, without written permission of the author. </p>
+        <div class="inforow">
+          <h2 class="inforow__title">
+            Blogs von Benj & Tonja
+          </h2>
+          <p>Verfolge die beiden Musiker auch gleich direkt.</p>
+          <a href="https://benjaminstalder.ch/" target="_blank" class="inforow__btn">
+            Benj's Blog
+          </a>
+          <a href="http://minikunst.ch/" target="_blank" class="inforow__btn">
+            Tonja's Blog
+          </a>
         </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer -->
 
-</div>
-<!-- view grid -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-<div class="deco-expander"></div>
-
-<!-- view player -->
-<div class="view view--player">
-  <button class="control-button control-button--back" aria-label="Back to album slideshow">
-    <svg class="icon icon--arrow">
-      <use xlink:href="#icon-arrow"></use>
-    </svg>
-  </button>
-  <div class="player-info">
-    <h2 class="artist artist--player">Lena Glass</h2>
-    <h3 class="title title--player">Blue Moments</h3>
-    <span class="year year--player">1999</span>
-  </div>
-  <div class="player-stand">
-    <div class="visualizer"></div>
-    <span class="song"></span>
-    <div class="player__controls">
-      <button class="player-button player-button--rotate" aria-label="Rotate LP">
-        <svg class="icon icon--rotate">
-          <use xlink:href="#icon-rotate"></use>
-        </svg>
-      </button>
-      <button class="player-button player-button--playstop" aria-label="Play or Stop">
-        <svg class="icon icon--play icon--hidden">
-          <use xlink:href="#icon-play"></use>
-        </svg>
-        <svg class="icon icon--stop">
-          <use xlink:href="#icon-stop"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="player">
-    <div class="player__element player__element--lp">
-      <div class="player__element-inner">
-        <svg class="player__svg-lp" viewBox="0 0 800 800">
-          <title>LP</title>
-          <path fill="#181819" d="M400,1C179.6,1,1,179.6,1,400s178.6,399,399,399s399-178.6,399-399S620.4,1,400,1zM400,409.8c-5.4,0-9.8-4.4-9.8-9.8s4.4-9.8,9.8-9.8s9.8,4.4,9.8,9.8S405.4,409.8,400,409.8z" />
-          <g stroke-width="1.5" stroke="#141415" fill="#181819">
-            <path d="M400,20C190.1,20,20,190.1,20,400s170.1,380,380,380s380-170.1,380-380S609.9,20,400,20z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,30C195.7,30,30,195.6,30,400s165.7,370,370,370s370-165.7,370-370S604.3,30,400,30z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,40C201.2,40,40,201.2,40,400s161.2,360,360,360s360-161.2,360-360S598.8,40,400,40z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,50C206.7,50,50,206.7,50,400s156.7,350,350,350s350-156.7,350-350S593.3,50,400,50z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,60C212.2,60,60,212.2,60,400s152.2,340,340,340s340-152.2,340-340S587.8,60,400,60z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,70C217.8,70,70,217.8,70,400s147.8,330,330,330s330-147.8,330-330S582.2,70,400,70z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,80C223.3,80,80,223.3,80,400s143.3,320,320,320s320-143.3,320-320S576.7,80,400,80z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,90C228.8,90,90,228.8,90,400s138.8,310,310,310s310-138.8,310-310S571.2,90,400,90z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,100c-165.7,0-300,134.3-300,300s134.3,300,300,300s300-134.3,300-300S565.7,100,400,100z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,110c-160.2,0-290,129.8-290,290s129.8,290,290,290s290-129.8,290-290S560.2,110,400,110z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,120c-154.6,0-280,125.4-280,280s125.4,280,280,280s280-125.4,280-280S554.6,120,400,120z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,130c-149.1,0-270,120.9-270,270s120.9,270,270,270s270-120.9,270-270S549.1,130,400,130z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,140c-143.6,0-260,116.4-260,260s116.4,260,260,260s260-116.4,260-260S543.6,140,400,140z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,150c-138.1,0-250,111.9-250,250s111.9,250,250,250s250-111.9,250-250S538.1,150,400,150z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,160c-132.5,0-240,107.5-240,240s107.5,240,240,240s240-107.5,240-240S532.5,160,400,160z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,170c-127,0-230,103-230,230s103,230,230,230s230-103,230-230S527,170,400,170z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,180c-121.5,0-220,98.5-220,220s98.5,220,220,220s220-98.5,220-220S521.5,180,400,180z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,190c-116,0-210,94-210,210s94,210,210,210s210-94,210-210S516,190,400,190z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-            <path d="M400,200c-110.5,0-200,89.5-200,200s89.5,200,200,200s200-89.5,200-200S510.5,200,400,200z M399.2,414.8c-8.6,0-15.5-6.9-15.5-15.5s6.9-15.5,15.5-15.5s15.5,6.9,15.5,15.5S407.8,414.8,399.2,414.8z" />
-          </g>
-          <path id="cover" fill="#4bb749" opacity="0" d="M400,262.1c-76.1,0-137.9,61.7-137.9,137.9S323.9,537.9,400,537.9S537.9,476.1,537.9,400S476.1,262.1,400,262.1z M400,411.7c-6.4,0-11.7-5.2-11.7-11.7s5.2-11.7,11.7-11.7s11.7,5.2,11.7,11.7S406.4,411.7,400,411.7z" />
-          <defs>
-            <clipPath id="coverClip">
-              <path fill="#4bb749" d="M400,262.1c-76.1,0-137.9,61.7-137.9,137.9S323.9,537.9,400,537.9S537.9,476.1,537.9,400S476.1,262.1,400,262.1z M400,411.7c-6.4,0-11.7-5.2-11.7-11.7s5.2-11.7,11.7-11.7s11.7,5.2,11.7,11.7S406.4,411.7,400,411.7z" />
-            </clipPath>
-          </defs>
-          <image xlink:href="assets/images/album11.jpg" x="250" y="250" height="300px" width="300px" clip-path="url(#coverClip)" />
-          <text class="lp-side-label lp-side-label--a" transform="matrix(1 0 0 1 381.8867 509.8047)" style="opacity:0.2; font-family:'Arial'; font-size:50.4557px;">A</text>
-          <text class="lp-side-label lp-side-label--b" transform="matrix(-1 0 0 1 418.2188 509.8047)" style="opacity:0.2; font-family:'Arial'; font-size:50.4557px;">B</text>
-        </svg>
-      </div>
-    </div>
-    <div class="player__element player__element--tonearm">
-      <svg class="player__svg-tonearm">
-        <use xlink:href="#icon-tonearm"></use>
-      </svg>
-    </div>
-  </div>
-  <!-- /player -->
-  <div class="effects">
-    <!-- Realistic LP needle scratch effect toggle -->
-    <button class="effects__button effects__button--vinyleffect effects__button--active" aria-label="Toggle Vinyl effect">
-      <svg class="icon icon--effect">
-        <use xlink:href="#icon-effect"></use>
-      </svg>
-    </button>
-    <!-- Impulse responses -->
-    <div class="effects__irs">
-      <button class="effects__button">
-        <svg class="icon icon--touchthrough icon--ir-cathedral">
-          <use xlink:href="#icon-ir-cathedral"></use>
-        </svg>
-      </button>
-      <button class="effects__button">
-        <svg class="icon icon--touchthrough icon--ir-acoustic">
-          <use xlink:href="#icon-ir-acoustic"></use>
-        </svg>
-      </button>
-      <button class="effects__button">
-        <svg class="icon icon--touchthrough icon--ir-stadium">
-          <use xlink:href="#icon-ir-stadium"></use>
-        </svg>
-      </button>
-    </div>
-    <!-- /effects__irs -->
-  </div>
-</div>
-<!-- view player -->
-
-<!-- view single -->
-<div class="view view--single">
-  <!-- single album item -->
-  <div class="single" id="album-1" data-side1="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3" data-side2="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3">
-    <div class="img-wrap img-wrap--single">
-      <img class="img img--single" src="assets/images/album-stay-true.jpg" alt="album1" />
-    </div>
-    <span class="number">01<span class="number__total">12</span></span>
-    <h2 class="artist artist--single">#1</h2>
-    <h3 class="title title--single">Stay True</h3>
-    <span class="year year--single">2016</span>
-  </div>
-  <!-- single album item -->
-  <!-- single album item -->
-  <div class="single" id="album-2" data-side1="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3" data-side2="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3">
-    <div class="img-wrap img-wrap--single">
-      <img class="img img--single" src="assets/images/album-someone-needs-someone-else.jpg" alt="album2" />
-    </div>
-    <span class="number">02<span class="number__total">12</span></span>
-    <h2 class="artist artist--single">#2</h2>
-    <h3 class="title title--single">Someone Needs Someone Else</h3>
-    <span class="year year--single">2016</span>
-  </div>
-  <!-- single album item -->
-  <!-- single album item -->
-  <div class="single" id="album-3" data-side1="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3" data-side2="assets/audio/baby-cool.mp3,assets/audio/baby-cool.mp3">
-    <div class="img-wrap img-wrap--single">
-      <img class="img img--single" src="assets/images/album-baby-cool.jpg" alt="album3" />
-    </div>
-    <span class="number">03<span class="number__total">12</span></span>
-    <h2 class="artist artist--single">#3</h2>
-    <h3 class="title title--single">Baby Cool</h3>
-    <span class="year year--single">2017</span>
-  </div>
-  <!-- single album item -->
-
-
-  <!-- controls -->
-  <div class="controls">
-    <button class="control-button control-button--play" aria-label="Play record">
-      <svg class="icon icon--progress" viewBox="0 0 70 70">
-        <circle cx="35" cy="35" r="24.15" />
-        <path d="M35,7c15.5,0,28,12.5,28,28S50.5,63,35,63S7,50.5,7,35S19.5,7,35,7z" />
-      </svg>
-      <svg class="icon icon--play">
-        <use xlink:href="#icon-play"></use>
-      </svg>
-    </button>
-    <div class="controls__navigate">
-      <button class="control-button control-button--next" aria-label="Next album">
-        <svg class="icon icon--next">
-          <use xlink:href="#icon-next"></use>
-        </svg>
-      </button>
-      <button class="control-button control-button--prev" aria-label="Previous album">
-        <svg class="icon icon--prev">
-          <use xlink:href="#icon-prev"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <!-- controls -->
-
-  <button class="control-button control-button--back" aria-label="Back to grid view">
-    <svg class="icon icon--arrow">
-      <use xlink:href="#icon-arrow"></use>
-    </svg>
-  </button>
-</div>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
