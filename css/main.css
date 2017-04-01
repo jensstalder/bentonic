@@ -153,11 +153,11 @@ h2, h3, h4{
 .fb-page{
   max-width: 100%;
   overflow: auto;
-  display: none;
+  display: none!important;
 }
 @media screen and (min-width: 480px) {
   .fb-page{
-    display: block;
+    display: block!important;
   }
 }
 
