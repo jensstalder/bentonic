@@ -96,6 +96,9 @@ textarea {
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+a, a:visited{
+  color: black;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -120,6 +123,9 @@ h2, h3, h4{
   margin: auto;
 }
 .inforow{
+  transition: 0.75s all;
+}
+.inforow__container{
   max-width: 800px;
   margin: auto;
   padding: 20px;
@@ -146,9 +152,63 @@ h2, h3, h4{
 }
 
 
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-#mc_embed_signup form{padding: 0px!important;}
+.inforow--inverse .inforow__btn:hover{
+  background-color: white;
+  color: black;
+}
+.inforow--inverse .inforow__btn{
+  background-color: #222;
+  color: white;
+   border-color: white;
+}
+.inforow--inverse{
+  background-color: #222;
+  color: white;
+}
+.inforow--inverse a{
+  color: white;
+}
 
+
+.inforow__images a{
+  display: block;
+  float: left;
+  width: 50%;
+}
+@media screen and (min-width: 550px) {
+  .inforow__images a{
+    display: block;
+    float: left;
+    width: 33.333333330%;
+  }
+}
+
+.inforow__images a div {
+  position: relative;
+  overflow: hidden;
+}
+.inforow__images a div:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.inforow__images a div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.inforow__images{
+
+}
+
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+#mc_embed_signup form{padding: 0px!important; background-color: transparent!important;}
+#mc_embed_signup{background-color: transparent!important;}
 
 .fb-page{
   max-width: 100%;
