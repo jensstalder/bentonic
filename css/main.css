@@ -114,7 +114,7 @@ h2, h3, h4{
 .headrow{
   max-width: 800px;
   margin: auto;
-  border-bottom: 1px dotted #999;
+  /*border-bottom: 1px dotted #999;*/
   padding: 20px;
 }
 .headrow__logo{
@@ -130,7 +130,7 @@ h2, h3, h4{
   margin: auto;
   padding: 20px;
   padding-bottom: 40px;
-  border-bottom: 1px dotted #999;
+  /*border-bottom: 1px dotted #999;*/
 }
 .inforow__btn{
   margin-top: 10px;
@@ -170,30 +170,40 @@ h2, h3, h4{
 }
 
 
-.inforow__images a{
+.inforow__image{
   display: block;
   float: left;
   width: 50%;
 }
 @media screen and (min-width: 550px) {
-  .inforow__images a{
+  .inforow__image{
     display: block;
     float: left;
     width: 33.333333330%;
   }
 }
 
-.inforow__images a div {
-  position: relative;
-  overflow: hidden;
+.inforow__image a {
+  display: block;
 }
-.inforow__images a div:before {
+.inforow__image > div{
+  position: relative;
+}
+.inforow__image > div:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 56.25%;
 }
-.inforow__images a div img {
+.inforow__image > div a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.inforow__image > div a img {
   position: absolute;
   top: 0;
   left: 0;
