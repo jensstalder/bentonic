@@ -189,6 +189,7 @@ h2, h3, h4{
 .inforow__image a {
   display: block;
 }
+
 .inforow__image > div{
   position: relative;
 }
