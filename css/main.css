@@ -120,7 +120,6 @@ h2, h3, h4{
 .headrow__logo{
   display: block;
   max-width: 400px;
-  margin: auto;
 }
 .inforow{
   transition: 0.75s all;
